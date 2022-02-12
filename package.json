@@ -1,0 +1,14 @@
+{
+  "name": "extension-backend",
+  "version": "1.0.0",
+  "description": "This is the backend for our chrome extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "prathamesh Dukare",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
