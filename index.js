@@ -1,4 +1,5 @@
 const express = require('express');
+const { json } = require('express/lib/response');
 const app = express();
 let host = 'localhost';
 let port = 3002;
@@ -6,7 +7,8 @@ const facts  = require('./facts.js');
 
 
 app.get('/random',(req,res)=>{
-    res.send(facts.randomFact());
+    let randomFact = facts.randomFact()
+    res.json(randomFact)
 })
 
 console.log(facts.randomFact());
